@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+span img{
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+    line-height: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+header div{
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+header h3 {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+
+header i {
+    margin-left: 10px;
+}
+
+header a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+#search h1 {
+    margin-bottom: 15px;
+}
+
+#search input {
+    width: 250px;
+    padding: 10px;
+    border: silver 1px solid;
+    border-radius: 5px;
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+#search button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    transition: all 0.1s ease-in-out;
+}
+
+#search button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+#container {
+    display: flex;
+    margin: 80px 0 40px;
+}
+
+#filter {
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    margin-top: 10px;
+    -webkit-box-shadow: 2px 7px 14px -7px rgba(115,115,115,0.77);
+-moz-box-shadow: 2px 7px 14px -7px rgba(115,115,115,0.77);
+box-shadow: 2px 7px 14px -7px rgba(115,115,115,0.77);
+}
+
+#filter div {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+
+#filter p {
+    margin-left: 20px;
+}
+
+#filter li {
+    list-style: none;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+#filter li:hover {
+    color: var(--color-primary);
+}
+
+#filter .selected {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#products {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+#product {
+    width: 30%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 7px 14px -7px rgba(115,115,115,0.77);
+    -moz-box-shadow: 2px 7px 14px -7px rgba(115,115,115,0.77);
+    box-shadow: 2px 7px 14px -7px rgba(115,115,115,0.77);
+    /* align-items: center; */
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+#info #left {
+    font-size: .9rem;
+    color: rgb(255, 81, 81);
+}
+
+#info #right {
+    font-size: .9rem;
+    color: rgb(219, 192, 41);
+}
+
+#product img {
+    width: 75%;
+    margin: 0 auto 15px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#product span {
+    color: var(--color-primary);
+    font-weight: 900;
+    margin-bottom: 20px;
+    padding: 0 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#final {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    /* position: relative; */
+}
+
+#final button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+#final button:hover {
+    cursor: pointer;
+    
+}
+
+@media (max-width:843px) {
+    #container{
+        flex-direction: column-reverse;
+    }
+    #filter{
+        width: 300px;
+        text-align: center;
+        margin: auto;
+    }
+    #product{
+        width: 70%;
+        margin-top: 5px;
+    }
+    #search{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    header h3{
+        display: none;
+    }
+}
